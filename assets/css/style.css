@@ -45,6 +45,7 @@ h1 {
     font-size: 90px;
     color: var(--dark-emerald);
     text-align: center;
+    text-shadow: 5px 5px 5px var(--emerald);
 }
 
 /* 'begin' button */
@@ -77,7 +78,7 @@ button:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    padding-bottom: 50px;
+    padding: 20px 20px;
     line-height: 1.6;
     transform: translate(-50%, -50%);
     border: 5px solid var(--dark-emerald);
@@ -108,4 +109,13 @@ button:hover {
 
 .buttons-box button {
     margin-left: 20px;
+    border: 2px solid var(--dark-emerald);
+}
+
+/* answer button grid */
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 10px 0;
 }
