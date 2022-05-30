@@ -21,9 +21,18 @@
     font-size: 100%;
   }
 
+html {
+    height: 100%;
+}  
+
 body {
-    background-color: var(--light-emerald);
-  }
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--light-emerald); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, var(--emerald), var(--light-emerald));
+}
 
 /* logo styling */
 h1 {
