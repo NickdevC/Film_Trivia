@@ -47,7 +47,7 @@ h1 {
     text-align: center;
 }
 
-/* begin button styling */
+/* 'begin' button */
 .main-btn {
     position: absolute;
     top: 50%;
@@ -55,7 +55,8 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-.main-btn button {
+button {
+    cursor: pointer;
     font-family: "Lobster Two", sans-serif;
     font-size: 50px;
     padding: 5px 5px;
@@ -63,27 +64,29 @@ h1 {
     color: var(--white);
     background-color: var(--dark-emerald);
     border: none;
-    box-shadow: 5px 5px var(--emerald);
+    box-shadow: 5px 5px 5px var(--emerald);
 }
 
-.main-btn button:hover {
+button:hover {
     background-color: var(--light-brown);
     color: var(--dark-emerald);
 }
 
-/* rules box */
-#rules-box {
+/* rules and question box area */
+.game-box {
     position: absolute;
     top: 50%;
     left: 50%;
+    padding-bottom: 50px;
+    line-height: 1.6;
     transform: translate(-50%, -50%);
     border: 5px solid var(--dark-emerald);
     background-color: var(--light-brown);
     border-radius: 10px;
-    box-shadow: 5px 5px var(--emerald);
+    box-shadow: 5px 5px 5px var(--emerald);
 }
 
-#rules-box h2 {
+.game-box h2 {
     margin-top: 10px;
     padding: 5px 5px;
     font-family: "Lobster Two", sans-serif;
@@ -97,6 +100,12 @@ h1 {
     font-size: 20px;
 }
 
+
+/* game buttons */
 .buttons-box {
     text-align: center;
+}
+
+.buttons-box button {
+    margin-left: 20px;
 }
