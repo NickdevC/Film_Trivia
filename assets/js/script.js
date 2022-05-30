@@ -88,6 +88,11 @@ function setStatusClass(element, correct) {
     }
 }
 
+function clearStatusClass(element) {
+    element.classList.remove('correct');
+    element.classList.remove('incorrect');
+}
+
 // returns user to main page on click of 'exit'
 document.getElementById("exit-btn").onclick = function () {
     location.href = "index.html";
