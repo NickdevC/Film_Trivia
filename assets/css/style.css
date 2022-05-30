@@ -72,16 +72,29 @@ h1 {
 }
 
 /* rules box */
-.rules-box {
+#rules-box {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid var(--dark-emerald);
+    background-color: var(--light-brown);
 }
 
-.rules-box h2 {
+#rules-box h2 {
     margin-top: 10px;
+    padding: 5px 5px;
     font-family: "Lobster Two", sans-serif;
     font-size: 50px;
     color: var(--dark-emerald);
+    text-align: center;
+}
+
+#rules-list {
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+.buttons-box {
     text-align: center;
 }
