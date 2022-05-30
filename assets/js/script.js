@@ -17,3 +17,8 @@ function setNextQuestion() {
 function selectAnswer() {
 
 }
+
+// returns user to main page on click of 'exit'
+document.getElementById("exit-btn").onclick = function () {
+    location.href = "index.html";
+};

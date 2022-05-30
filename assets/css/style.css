@@ -79,6 +79,8 @@ h1 {
     transform: translate(-50%, -50%);
     border: 5px solid var(--dark-emerald);
     background-color: var(--light-brown);
+    border-radius: 10px;
+    box-shadow: 5px 5px var(--emerald);
 }
 
 #rules-box h2 {
