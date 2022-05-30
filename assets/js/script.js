@@ -71,8 +71,12 @@ function resetState() {
     }
 }
 
-function selectAnswer() {
-
+function selectAnswer(event) {
+    const selectedAnswer = event.target;
+    const correct = selectedAnswer.dataset.correct;
+    Array.from(answerElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct);
+    })
 }
 
 // returns user to main page on click of 'exit'
