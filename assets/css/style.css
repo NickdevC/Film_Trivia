@@ -131,3 +131,11 @@ button:hover {
     border: none;
     box-shadow: 2px 2px 2px var(--emerald);
 }
+
+.answer-button.correct {
+    background-color: green;
+}
+
+.answer-button.incorrect {
+    background-color: red;
+}

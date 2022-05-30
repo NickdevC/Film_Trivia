@@ -79,6 +79,15 @@ function selectAnswer(event) {
     })
 }
 
+function setStatusClass(element, correct) {
+    clearStatusClass(element);
+    if (correct) {
+        element.classList.add('correct');
+    } else {
+        element.classList.add('incorrect');
+    }
+}
+
 // returns user to main page on click of 'exit'
 document.getElementById("exit-btn").onclick = function () {
     location.href = "index.html";
