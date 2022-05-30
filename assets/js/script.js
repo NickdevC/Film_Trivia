@@ -1,4 +1,4 @@
-const quizQuestions = [
+const questions = [
     {
       question: "In which film did Ellen Ripley first appear?",
       answers: ["Casino Royale", "Alien", "Titanic", "Forest Gump"],
@@ -22,10 +22,12 @@ const beginButton = document.getElementById('begin-btn');
 const rulesContainerElement = document.getElementById('rules-box');
 const startButton = document.getElementById('start-btn');
 const questionContainerElement = document.getElementById('question-box');
-const randomQuestions, currentQuestionIndex;
+let randomQuestions, currentQuestionIndex;
+const questionElement = document.getElementById('question');
+const answerElement = document.getElementById('choices')
 
-beginButton.addEventListener('click', startGame)
-startButton.addEventListener('click', firstQuestion)
+beginButton.addEventListener('click', showRules)
+startButton.addEventListener('click', startGame)
 
 function showRules() {
     beginButton.classList.add('hide');
@@ -35,13 +37,17 @@ function showRules() {
 function startGame() {
     rulesContainerElement.classList.add('hide');
     questionContainerElement.classList.remove('hide');
-    randomQuestions = quizQuestions.sort(() => Math.random() - .5);
+    randomQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     setNextQuestion();
 }
 
 function setNextQuestion() {
+    showQuestion(randomQuestions[currentQuestionIndex]);
+}
 
+function showQuestion(question) {
+    questionElement.innerText = question.question;
 }
 
 function selectAnswer() {

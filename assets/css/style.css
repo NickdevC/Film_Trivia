@@ -119,3 +119,15 @@ button:hover {
     gap: 10px;
     margin: 10px 0;
 }
+
+.answer-button {
+    cursor: pointer;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 40px;
+    padding: 3px 3px;
+    border-radius: 6px;
+    color: var(--white);
+    background-color: var(--dark-emerald);
+    border: none;
+    box-shadow: 2px 2px 2px var(--emerald);
+}
