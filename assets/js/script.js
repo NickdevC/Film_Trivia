@@ -1,21 +1,23 @@
 const questions = [
     {
       question: "In which film did Ellen Ripley first appear?",
-      answers: ["Casino Royale", "Alien", "Titanic", "Forest Gump"],
-      correct: "Alien"
+      answers: [
+          {text: "Casino Royale", correct: false}, 
+          { text: "Alien", correct: true}, 
+          { text: "Titanic", correct: false},
+          { text: "Forest Gump", correct: false}
+        ] 
     },
-  
+
     {
-      question: 'Finish the famous movie line: "We\'re going to need. bigger ______"',
-      answers: ["car", "loan", "hammer", "boat"],
-      correct: "boat"
-    },
-    
-    {
-      question: "What is the name of the skyscraper in Die Hard?",
-      answers: ["Noki Plaza", "Niagra Plaza", "Nakatomi Plaza", "Nakamati Plaza"],
-      correct: "Nakatomi Plaza"
-    },
+        question: "Finish the famous movie line: 'We\'re gonna need a bigger _____'!",
+        answers: [
+            {text: "boat", correct: true}, 
+            { text: "mortgage", correct: false}, 
+            { text: "car", correct: false},
+            { text: "gun", correct: false}
+          ] 
+      },
 ]
 
 const beginButton = document.getElementById('begin-btn');
@@ -48,6 +50,16 @@ function setNextQuestion() {
 
 function showQuestion(question) {
     questionElement.innerText = question.question;
+    question.answers.forEach(answer => {
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('answer-button');
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener('click', selectAnswer);
+        answerElement.appendChild(button);
+    })
 }
 
 function selectAnswer() {
