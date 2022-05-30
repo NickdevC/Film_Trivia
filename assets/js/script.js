@@ -18,22 +18,25 @@ const quizQuestions = [
     },
 ]
 
-const beginButton = document.getElementById('begin-btn')
-const rulesContainerElement = document.getElementById('rules-box')
-const startButton = document.getElementById('start-btn')
-const questionContainerElement = document.getElementById('question-box')
+const beginButton = document.getElementById('begin-btn');
+const rulesContainerElement = document.getElementById('rules-box');
+const startButton = document.getElementById('start-btn');
+const questionContainerElement = document.getElementById('question-box');
+const randomQuestions, currentQuestionIndex;
 
 beginButton.addEventListener('click', startGame)
 startButton.addEventListener('click', firstQuestion)
 
-function startGame() {
+function showRules() {
     beginButton.classList.add('hide');
     rulesContainerElement.classList.remove('hide');
 }
 
-function firstQuestion() {
+function startGame() {
     rulesContainerElement.classList.add('hide');
     questionContainerElement.classList.remove('hide');
+    randomQuestions = quizQuestions.sort(() => Math.random() - .5);
+    currentQuestionIndex = 0;
     setNextQuestion();
 }
 
