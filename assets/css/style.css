@@ -31,7 +31,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: var(--light-emerald); /* For browsers that do not support gradients */
-    background-image: linear-gradient(to bottom right, var(--emerald), var(--light-emerald));
+    background-image: linear-gradient(to bottom right, var(--light-brown), var(--dark-emerald));
 }
 
 .hide {
