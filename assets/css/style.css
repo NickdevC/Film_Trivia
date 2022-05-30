@@ -66,3 +66,18 @@ h1 {
     background-color: var(--light-brown);
     color: var(--dark-emerald);
 }
+
+/* rules box */
+.rules-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.rules-box h2 {
+    margin-top: 10px;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 50px;
+    color: var(--dark-emerald);
+    text-align: center;
+}

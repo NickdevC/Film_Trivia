@@ -9,7 +9,7 @@
 </head>
 <body>
     <header id="logo">
-        <h1 class="subhead">The Ultimate Film Trivia</h1>
+        <h1>The Ultimate Film Trivia</h1>
     </header>
 
 <!-- start button -->
@@ -20,65 +20,20 @@
 <!-- rules box -->
     <div class="rules-box">
         <h2>Rules</h2>
-        <div class="rules-list">
-            <p>1.</p>
-            <p>2.</p>
-            <p>3.</p>
+        <div class="rules">
+            <ol id="rules-list">
+                <li>You have 5 questions to answer</li>
+                <li>For each question, you will have the option of 4 potential answers</li>
+                <li>Select the option that you believe to be correct</li>
+                <li>Once an option has been selected, click 'Next' to move on</li>
+            </ol>
         </div>
 
         <div class="buttons-box">
-            <button class="">Exit</button>
-            <button class="">Start</button>
+            <button class="exit-btn">Exit</button>
+            <button class="start-btn">Start</button>
         </div>
     </div>
-
-<!-- questions Box -->
-    <div class="questions-box">
-        <header>
-        </header>
-        <section class="question-section">
-            <h2 class="questions">Questions
-    <!-- replace text with the questions with JS -->
-            </h2>
-            <div class="choices">
-    <!-- Insert 4 different possible answers using JS -->
-                <div class="option choice-one"></div>
-                <div class="option choice-two"></div>
-                <div class="option choice-three"></div>
-                <div class="option choice-four"></div>
-            </div>
-        </section>
-
-    <!-- Footer for Questions Box -->
-        <footer>
-            <div class="total-ques">
-    <!-- Counter goes here from JS -->
-            </div>
-            <button class="btn next-ques">Next Question</button>
-        </footer>
-    </div>
-
-<!-- result box -->
-    <div class="result-box">
-        <div class="completed">You completed the Quiz!</div>
-        <div class="trophy">
-    <!-- fontawesome icon dependent on user score -->
-        </div>
-        <div class="score">
-    <!-- Insert the score using JS -->
-        </div>
-        <div class="buttons">
-            <button class="btn replay-btn">Replay</button>
-            <button class="btn quit">Exit</button>
-        </div>
-    </div>
-
-<!-- footer -->
-    <footer class="page-footer">
-        <div><a href="http://github.com/Daferia" target="_blank" alt="Link to github page"><i class="fab fa-github"></i></a>
-            <p>Nick Coles 2022</p>
-        </div>
-    </footer>
 
 <!-- javascript -->
     <script src="assets/js/script.js"></script>
