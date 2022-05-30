@@ -26,7 +26,8 @@ const startButton = document.getElementById('start-btn');
 const questionContainerElement = document.getElementById('question-box');
 let randomQuestions, currentQuestionIndex;
 const questionElement = document.getElementById('question');
-const answerElement = document.getElementById('choices')
+const answerElement = document.getElementById('choices');
+const nextButton = document.getElementById('next-btn');
 
 beginButton.addEventListener('click', showRules)
 startButton.addEventListener('click', startGame)
@@ -45,6 +46,7 @@ function startGame() {
 }
 
 function setNextQuestion() {
+    resetState();
     showQuestion(randomQuestions[currentQuestionIndex]);
 }
 
@@ -60,6 +62,13 @@ function showQuestion(question) {
         button.addEventListener('click', selectAnswer);
         answerElement.appendChild(button);
     })
+}
+
+function resetState() {
+    nextButton.classList.add('hide');
+    while(answerElement.firstChild) {
+        answerElement.removeChild(answerElement.firstChild);
+    }
 }
 
 function selectAnswer() {
