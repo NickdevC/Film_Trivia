@@ -38,6 +38,66 @@ const questions = [
             { text: "American Pie", correct: false}
           ] 
       },
+
+      {
+        question: "In Harry Potter, what is the name of the street where the Dursleys live?",
+        answers: [
+            {text: "Privet Drive", correct: true}, 
+            { text: "Privet Road", correct: false}, 
+            { text: "Privet Avenue", correct: false},
+            { text: "Privet Street", correct: false}
+          ] 
+      },
+
+      {
+        question: "In The Lion King, what is the name of Simba's uncle?",
+        answers: [
+            {text: "Jafar", correct: false}, 
+            { text: "Mufassa", correct: false}, 
+            { text: "Scratch", correct: false},
+            { text: "Scar", correct: true}
+          ] 
+      },
+
+      {
+        question: "Willy Wonka gave out ___ tickets hidden in choclate bars.",
+        answers: [
+            {text: "4", correct: false}, 
+            { text: "8", correct: false}, 
+            { text: "5", correct: true},
+            { text: "6", correct: false}
+          ] 
+      },
+
+      {
+        question: "Where does Paddington keep his marmalade sandwiches?",
+        answers: [
+            {text: "In his coat", correct: false}, 
+            { text: "Under his hat", correct: true}, 
+            { text: "In his suitcase", correct: false},
+            { text: "Behind his back", correct: false}
+          ] 
+      },
+
+      {
+        question: "Willy Wonka gave out ___ tickets hidden in choclate bars.",
+        answers: [
+            {text: "4", correct: false}, 
+            { text: "8", correct: false}, 
+            { text: "5", correct: true},
+            { text: "6", correct: false}
+          ] 
+      },
+
+      {
+        question: "Willy Wonka gave out ___ tickets hidden in choclate bars.",
+        answers: [
+            {text: "4", correct: false}, 
+            { text: "8", correct: false}, 
+            { text: "5", correct: true},
+            { text: "6", correct: false}
+          ] 
+      },
 ]
 
 const beginButton = document.getElementById('begin-btn');
