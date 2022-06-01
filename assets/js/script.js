@@ -18,6 +18,26 @@ const questions = [
             { text: "gun", correct: false}
           ] 
       },
+
+      {
+        question: "In Toy Story, what is the name of Andy's twisted neighbour?",
+        answers: [
+            {text: "Jim", correct: false}, 
+            { text: "Mark", correct: false}, 
+            { text: "Sid", correct: true},
+            { text: "Zac", correct: false}
+          ] 
+      },
+
+      {
+        question: "'No luck catching them swans then?' is a quote from what film?",
+        answers: [
+            {text: "Bridget Jones' Diary", correct: false}, 
+            { text: "Hot Fuzz", correct: true}, 
+            { text: "Austin Powers", correct: false},
+            { text: "American Pie", correct: false}
+          ] 
+      },
 ]
 
 const beginButton = document.getElementById('begin-btn');
@@ -83,10 +103,7 @@ function selectAnswer(event) {
     })
     if (randomQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
-    } else {
-        startButton.innerText = 'Reset';
-        startButton.classList.remove('hide');
-    }
+    } 
 }
 
 function setStatusClass(element, correct) {
