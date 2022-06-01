@@ -31,6 +31,10 @@ const nextButton = document.getElementById('next-btn');
 
 beginButton.addEventListener('click', showRules)
 startButton.addEventListener('click', startGame)
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++;
+    setNextQuestion();
+})
 
 function showRules() {
     beginButton.classList.add('hide');
@@ -77,6 +81,12 @@ function selectAnswer(event) {
     Array.from(answerElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     })
+    if (randomQuestions.length > currentQuestionIndex + 1) {
+        nextButton.classList.remove('hide');
+    } else {
+        startButton.innerText = 'Reset';
+        startButton.classList.remove('hide');
+    }
 }
 
 function setStatusClass(element, correct) {
