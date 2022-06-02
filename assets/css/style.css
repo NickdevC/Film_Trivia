@@ -139,3 +139,19 @@ button:hover {
 .answer-button.incorrect {
     background-color: red;
 }
+
+/* score area */
+.score-area {
+    text-align: center;
+    margin-top: 600px;
+
+}
+
+.scores {
+    display: inline-block;
+    margin: 20px;
+}
+
+#score #incorrect {
+    font-family: "Lobster Two", sans-serif;
+}
