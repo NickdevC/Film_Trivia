@@ -80,22 +80,22 @@ const questions = [
       },
 
       {
-        question: "Willy Wonka gave out ___ tickets hidden in choclate bars.",
+        question: "Will Smith and Martin Lawrence play cops in which film?",
         answers: [
-            {text: "4", correct: false}, 
-            { text: "8", correct: false}, 
-            { text: "5", correct: true},
-            { text: "6", correct: false}
+            {text: "Independence Day", correct: false}, 
+            { text: "Men in Black", correct: false}, 
+            { text: "Bad Boys", correct: true},
+            { text: "Big Momma's House", correct: false}
           ] 
       },
 
       {
-        question: "Willy Wonka gave out ___ tickets hidden in choclate bars.",
+        question: "In the film 'The Ring', what item is cursed with the an evil spirit?",
         answers: [
-            {text: "4", correct: false}, 
-            { text: "8", correct: false}, 
-            { text: "5", correct: true},
-            { text: "6", correct: false}
+            {text: "A book", correct: false}, 
+            { text: "A videotape", correct: true}, 
+            { text: "A videogame", correct: false},
+            { text: "A house", correct: false}
           ] 
       },
 ]
