@@ -116,11 +116,17 @@ nextButton.addEventListener('click', () => {
     setNextQuestion();
 })
 
+/**
+ * Displays rules to the user when 'start' is clicked
+ */
 function showRules() {
     beginButton.classList.add('hide');
     rulesContainerElement.classList.remove('hide');
 }
 
+/**
+ * Hides rules and displays first question to user
+ */
 function startGame() {
     rulesContainerElement.classList.add('hide');
     questionContainerElement.classList.remove('hide');
@@ -129,11 +135,17 @@ function startGame() {
     setNextQuestion();
 }
 
+/**
+ * On click, sets the next random question
+ */
 function setNextQuestion() {
     resetState();
     showQuestion(randomQuestions[currentQuestionIndex]);
 }
 
+/**
+ * Display question and options for user
+ */
 function showQuestion(question) {
     questionElement.innerText = question.question;
     question.answers.forEach(answer => {
@@ -148,6 +160,10 @@ function showQuestion(question) {
     })
 }
 
+
+/**
+ * Hide 'next' button when all questions are complete
+ */
 function resetState() {
     nextButton.classList.add('hide');
     while(answerElement.firstChild) {
@@ -155,6 +171,9 @@ function resetState() {
     }
 }
 
+/**
+ * 
+ */
 function selectAnswer(event) {
     const selectedAnswer = event.target;
     const correct = selectedAnswer.dataset.correct;
@@ -166,6 +185,10 @@ function selectAnswer(event) {
     } 
 }
 
+/**
+ * Change colour of answer buttons when user clicks
+ * based on their 'correct' or 'incorrect' values
+ */
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
